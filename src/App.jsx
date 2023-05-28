@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+
 import styles from './title.module.css';
 
 export default function App() {
@@ -9,7 +10,7 @@ export default function App() {
   useEffect(() => {
 
     async function buscarDados(){
-      fetch('https://jsonplaceholder.typicode.com/todos').then(res => res.json()).then(res => setTarefas(res));
+      fetch('https://jsonplaceholder.typicode.com/todos').then(res => res.json()).then(res => setTarefas(res))
     }
 
     buscarDados();
@@ -26,7 +27,7 @@ export default function App() {
               <p>{tarefa.id} - {tarefa.title}</p>
             </div>
           )
-        })};
+        })}
       </div>
     </div>
   )

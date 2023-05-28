@@ -1,5 +1,18 @@
-.titulo{
+body{
+    background-image: linear-gradient(#4e0723, rgb(56, 106, 106));
+}
+
+.task-item{
+    display: inline-flex;
+    margin: 1rem 1rem 0;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    width: calc(50% - 5%);
+    justify-content: start;
+    background-color: aqua;
+}
+
+.task-item p{
     display: flex;
-    justify-content: left;
-    font-size: larger;
+    flex-wrap: wrap;
 }
